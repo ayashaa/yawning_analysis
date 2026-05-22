@@ -143,7 +143,7 @@ CDD"
 
 fig2 <- fig2a + fig2b + fig2c + fig2d  + plot_layout(axis_titles = "collect", design = design) 
 
-ggsave(filename = "fig2.pdf", path = "plots/yawning/", plot = fig2, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "fig2.pdf", path = "plots/yawning/", plot = fig2, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
 
 # FIGURE 3 & S1-2: Yawning and state changes
 
@@ -207,10 +207,10 @@ fig3upper <- fig3a + fig3b + fig3c + plot_layout(axis_titles = "collect", design
 fig3lower <- fig3d + fig3e + plot_layout(axis_titles = "collect")
 figS2 <- figS2a + figS2b + plot_layout(nrow = 2)
 
-ggsave(filename = "fig3upper.pdf", path = "plots/yawning/", plot = fig3upper, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
-ggsave(filename = "fig3lower.pdf", path = "plots/yawning/", plot = fig3lower, width = 8.5*1.5, height = 3*1.5, units = "in", device='pdf', dpi=700)
-ggsave(filename = "figS2.pdf", path = "plots/yawning/", plot = figS2, width = 8.5*1.5, height = 11*1.5, units = "in", device='pdf', dpi=700)
-ggsave(filename = "figS1.pdf", path = "plots/yawning/", plot = figS1, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "fig3upper.pdf", path = "plots/yawning/", plot = fig3upper, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "fig3lower.pdf", path = "plots/yawning/", plot = fig3lower, width = 8.5*1.5, height = 3*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "figS2.pdf", path = "plots/yawning/", plot = figS2, width = 8.5*1.5, height = 11*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "figS1.pdf", path = "plots/yawning/", plot = figS1, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
 
 # FIGURE 4 & S3-4: Social yawning
 
@@ -245,15 +245,15 @@ CDE"
 
 fig5 <- fig5a + fig5b + fig5c + fig5d + fig5e + plot_layout(guides = 'collect', axis_titles = 'collect', design = design) 
 
-ggsave(filename = "locations.png", path = "plots/yawning/", plot = fig5b, width = 8.5*1.5, height = 3*1.5, units = "in", device='png', dpi=700)
-ggsave(filename = "fig5.pdf", path = "plots/yawning/", plot = fig5, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "locations.png", path = "plots/yawning/", plot = fig5b, width = 8.5*1.5, height = 3*1.5, units = "in", device='png', dpi=700)
+#ggsave(filename = "fig5.pdf", path = "plots/yawning/", plot = fig5, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
 
 sleeppos <- plot_densities(sleep_data, F, "Sleep")
 yawnpos <- plot_densities(merged_yawns, F, "Yawns")
 
 figS3 <- sleeppos + yawnpos + plot_layout(axis_titles = "collect", guides = "collect")
 
-ggsave(filename = "figS3.png", path = "plots/yawning/", plot = figS3, width = 8.5*1.5, height = 6*1.5, units = "in", device='png', dpi=700)
+#ggsave(filename = "figS3.png", path = "plots/yawning/", plot = figS3, width = 8.5*1.5, height = 6*1.5, units = "in", device='png', dpi=700)
 
 figS4a <- plot_mc_analysis(filter(merged_yawns), "Social", phase_facets, 30, F, F, T)
 
@@ -288,4 +288,4 @@ BBBC"
 
 figS4 <- figS4a + figS4b + figS4c + plot_layout(axis_titles = "collect", design = design)
 
-ggsave(filename = "figS4.pdf", path = "plots/yawning/", plot = figS4, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
+#ggsave(filename = "figS4.pdf", path = "plots/yawning/", plot = figS4, width = 8.5*1.5, height = 6*1.5, units = "in", device='pdf', dpi=700)
